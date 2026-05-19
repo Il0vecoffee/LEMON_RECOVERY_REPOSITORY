@@ -1,0 +1,40 @@
+{
+    "hosting": {
+        "site": "lemon-admin-32c31",
+        "public": "RELEASES/WEB",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    },
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "limeapp-34c6f",
+                    "appId": "1:254821518092:android:bd8d11c81b91ead0a69729",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "limeapp-34c6f",
+                    "configurations": {
+                        "android": "1:254821518092:android:bd8d11c81b91ead0a69729",
+                        "ios": "1:254821518092:ios:0d5bb310b3fc2498a69729",
+                        "macos": "1:254821518092:ios:0d5bb310b3fc2498a69729",
+                        "web": "1:254821518092:web:5617c06a6aa34cb8a69729",
+                        "windows": "1:254821518092:web:cbda1ccfa43411c5a69729"
+                    }
+                }
+            }
+        }
+    }
+}
